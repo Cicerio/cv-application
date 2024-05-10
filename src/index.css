@@ -46,13 +46,32 @@ section {
   display:flex;
   border: 1px solid white;
   height: auto;
+  margin: 0.5%;
 }
 #left-bar{
+  display: flex;
   flex:1;
+  flex-direction: column;
+  background-color: #17193b;
 }
 #right-bar{
   flex:2;
 }
+div{
+  display:flex;
+  border: 1px solid white;
+  padding:10px
+}
+div .name-block{
+  flex:1
+}
+div .contacts-block{
+  flex:1.5;
+}
+div .summary-block{
+  flex:2
+}
+
 @media (max-width: 700px) {
   #root{
     max-height: none;
